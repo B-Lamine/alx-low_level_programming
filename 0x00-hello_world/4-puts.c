@@ -1,8 +1,6 @@
 #include <stdio.h>
-
 /*
- *print "Programming is like building a multilingual puzzle
- *to the st IO
+ *print "Programming is like building a multilingual puzzle to the std IO
  */
 int main(void)
 {
