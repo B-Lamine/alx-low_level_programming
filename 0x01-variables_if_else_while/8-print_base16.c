@@ -11,7 +11,7 @@ int main(void)
 
 	while (d <= 0x46)
 	{
-		if (d <= 0x39 | d >= 0x41)
+		if (d <= 0x39 || d >= 0x41)
 			putchar(d);
 		d++;
 	}
