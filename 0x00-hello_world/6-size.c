@@ -1,6 +1,6 @@
-#include <std.io>
+#include <stdio.h>
 /*
- *
+ *print sizes of different types of variables
  */
 int main(void)
 {
