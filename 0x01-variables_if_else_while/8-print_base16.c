@@ -9,9 +9,9 @@ int main(void)
 {
 	int d = 0x30;
 
-	while (d <= 0x46)
+	while (d <= 0x66)
 	{
-		if (d <= 0x39 || d >= 0x41)
+		if (d <= 0x39 || d >= 0x61)
 			putchar(d);
 		d++;
 	}
