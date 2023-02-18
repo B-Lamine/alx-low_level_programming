@@ -7,12 +7,19 @@
  */
 int main(void)
 {
-	int d = 0x30;
+	int d = 48, i;
 
-	while (d <= 0x46)
+	for (i = 0; i < 10; i++)
 	{
-		if (d <= 0x39 | d >= 0x41)
-			putchar(d);
+	}
+
+	while (d <= 57)
+	{
+		for (i = 0; i < 10; i++)
+		{
+			putchar(d + i)
+		}
+		putchar(", ");
 		d++;
 	}
 	putchar('\n');
