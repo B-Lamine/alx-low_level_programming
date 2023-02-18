@@ -9,17 +9,12 @@ int main(void)
 {
 	int d = 48, i;
 
-	for (i = 0; i < 10; i++)
-	{
-	}
-
 	while (d <= 57)
 	{
 		for (i = 0; i < 10; i++)
 		{
-			putchar(d + i)
+			putchar(d + i);
 		}
-		putchar(", ");
 		d++;
 	}
 	putchar('\n');
