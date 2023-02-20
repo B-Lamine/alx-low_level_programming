@@ -1,7 +1,9 @@
 #include <stdio.h>
 
-/*
- *displays a sentence using printf
+/**
+ * main - displays a sentence using printf
+ *
+ * Return: 0 when code successful
  */
 int main(void)
 {
