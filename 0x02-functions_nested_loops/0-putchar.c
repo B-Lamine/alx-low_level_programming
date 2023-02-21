@@ -1,4 +1,5 @@
-#include <unistd.h>
+#include <string.h>
+#include "main.h"
 
 /**
  *
@@ -9,6 +10,10 @@
 
 int main(void)
 {
-	write(1, "_putchar", 8);
+	unsigned int i;
+	char cc[10] = {'_','p','u','t','c','h','a','r','\n'};
+
+	for (i = 0; i < strlen(cc); i++)
+		_putchar(cc[i]);
 	return (0);
 }
