@@ -1,0 +1,11 @@
+# ignore emacs generated files
+~*
+# ignore all files (this is a trick to exclude binary files -- see follow-up)
+#*
+# (follow up) unignore files with extensions, directories and sbdirectories
+#!*.*
+#!*/**
+#
+# the latter would also ignore shell script and makefiles
+# the convenient solution is to just conform to using default name for binary files (a.out) and ignoring it
+a.out
