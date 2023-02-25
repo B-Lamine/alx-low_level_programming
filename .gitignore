@@ -12,3 +12,5 @@
 # the latter would also ignore shell script and makefiles
 # the convenient solution is to just conform to using default name for binary files (a.out) and ignoring it
 a.out
+*.o
+*.s
