@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _abs - prin-ts absolute vaue of number.
+ * _abs - prints absolute value of number.
  * @n: integer
  *
  * Return: n if it is positive or null and -n if it is negative.
