@@ -1,5 +1,8 @@
 # ignore emacs generated files
 ~*
+~*.*
+*~
+*.*~
 # ignore all files (this is a trick to exclude binary files -- see follow-up)
 #*
 # (follow up) unignore files with extensions, directories and sbdirectories
