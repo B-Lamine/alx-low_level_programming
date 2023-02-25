@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print single digits in base 10
+ * main - prints all possible combinations of single-digit numbers.
  *
  * Return: 0 is code successful
  */
