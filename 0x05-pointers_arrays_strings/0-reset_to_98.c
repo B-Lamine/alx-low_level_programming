@@ -1,4 +1,3 @@
-#include <stdio.h>
 
 /**
   * reset_to_98 - changes the value stored at the address @n to 98.
