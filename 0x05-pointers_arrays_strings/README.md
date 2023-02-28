@@ -6,3 +6,4 @@ This contains practice code for manipulating pointers, arrays and strings in c.
 3-puts.c : displays a string of characters.
 4-print_rev.c : displays a string of character in reverse. 
 5-rev_string.c : reverses a string of characters.
+6-puts2.c : displays a string of characters while skipping a character each time.
