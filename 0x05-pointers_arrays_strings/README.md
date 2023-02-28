@@ -9,3 +9,4 @@ This contains practice code for manipulating pointers, arrays and strings in c.
 6-puts2.c : displays a string of characters while skipping a character each time.
 7-puts_half.c : displays the last half of a string, excluding the middle character if string's length is odd.
 8-print_array.c : lists the elements of an array.
+9-strcpy.c : copies a string (including null byte '\0') to a buffer and returns buffer's address.
