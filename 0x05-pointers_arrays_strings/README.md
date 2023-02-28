@@ -7,3 +7,5 @@ This contains practice code for manipulating pointers, arrays and strings in c.
 4-print_rev.c : displays a string of character in reverse. 
 5-rev_string.c : reverses a string of characters.
 6-puts2.c : displays a string of characters while skipping a character each time.
+7-puts_half.c : displays the last half of a string, excluding the middle character if string's length is odd.
+8-print_array.c : lists the elements of an array.
