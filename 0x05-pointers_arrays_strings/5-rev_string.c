@@ -1,3 +1,4 @@
+#include <stdio.h>
 int _strlen(char *s);
 
 /**
@@ -8,7 +9,7 @@ int _strlen(char *s);
   */
 int _strlen(char *s)
 {
-	int i;
+	int ii;
 
 	i = 0;
 	while (*(s + i) != '\0')
@@ -22,19 +23,16 @@ int _strlen(char *s)
   */
 void rev_string(char *s)
 {
-	int i, len = _strlen(s);
-	char s_tmp[10];
+	int i, len;
+	char c;
 
 	i = 0;
-	while (i < len)
+	len = _strlen(s);
+	while (i < (len + 1) / 2)
 	{
-		s_tmp[i] = *(s + i);
-		i++;
-	}
-	i = 0;
-	while (i < len)
-	{
-		*(s + i) = s_tmp[len - i - 1];
+		c = *(s + i);
+		*(s + i) = *(s + len - i - 1);
+		*(s + len - i - 1) = c;
 		i++;
 	}
 }
