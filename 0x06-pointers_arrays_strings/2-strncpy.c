@@ -25,14 +25,11 @@ int _strlen(char *s)
   */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i, len;
+	int i;
 
 	i = 0;
-	len = _strlen(src);
 	while (i < n)
 	{
-		if (i == len)
-			break;
 		*(dest + i) = *(src + i);
 		i++;
 	}
