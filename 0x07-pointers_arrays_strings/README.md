@@ -5,3 +5,4 @@ More code practicing pointers (pointers to pointers), arrays and strings.
 2-strchr.c : searches character in a string.
 3-strspn.c : counts the number of characters in a given string before a character in a given set occurs.
 4-strpbrk.c : locates first occurence of a byte from any given set in a given string.
+5-strstr.c : finds substring in a given string.
