@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 
 /**
   * _strlen - counts length of the string.
@@ -37,5 +36,5 @@ char *_strchr(char *s, char c)
 		else
 			i++;
 	}
-	return (NULL);
+	return (0);
 }
