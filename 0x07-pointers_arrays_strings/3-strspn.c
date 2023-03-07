@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 
 /**
   * _strlen - counts length of the string.
@@ -46,5 +45,5 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
