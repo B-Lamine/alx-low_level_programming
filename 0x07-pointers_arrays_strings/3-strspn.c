@@ -32,10 +32,10 @@ unsigned int _strspn(char *s, char *accept)
 	len2 = _strlen(accept);
 	i = 0;
 	n = 0;
-	while (i <= len1)
+	while (i < len1)
 	{
 		j = 0;
-		while (j <= len2)
+		while (j < len2)
 		{
 			if (*(s + i) == *(accept + j))
 			{
