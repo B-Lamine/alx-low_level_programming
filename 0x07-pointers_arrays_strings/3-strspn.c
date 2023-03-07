@@ -25,7 +25,7 @@ int _strlen(char *s)
   */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i, j, k, len1, len2;
+	int i, j, len1, len2;
 	unsigned int n;
 
 	len1 = _strlen(s);
@@ -39,16 +39,6 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (*(s + i) == *(accept + j))
 			{
-				k = 0;
-				while (k < i)
-				{
-					if (*(s + i) == *(s + k))
-					{
-						n--;
-						break;
-					}
-					k++;
-				}
 				n++;
 				break;
 			}
