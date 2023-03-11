@@ -6,3 +6,4 @@ Code used to practice recursion in c.
 3-factorial.c : computes factorial of a given number.
 4-pow_recursion.c : computes to a given power a given number.
 5-sqrt_recursion.c : computes natural square root of a given integer.
+6-is_prime_number.c : checks if given integer is a prime.
