@@ -11,3 +11,4 @@ This contains practice code for manipulating pointers, arrays and strings in c.
 8-print_array.c : lists the elements of an array.
 9-strcpy.c : copies a string (including null byte '\0') to a buffer and returns buffer's address.
 100-atoi.c : extracts the first occurrence of a number from a given string.
+101-keygen.c : generates valid passwords for the file 101-crackme.
