@@ -10,20 +10,20 @@
 int main(void)
 {
 	char s[64];
-	int i, n, tmp, sum, j, test;
+	int i, n, tmp, sum;
 	time_t t;
 
 	srand((unsigned) time(&t));
 	sum = 0;
-	n = 2772;
+	n = 0xad4;
 	i = 0;
 	while (i < 64)
 	{
-		if (2772 - sum > 126)
+		if (n - sum > 126)
 			tmp = rand() % 83 + 44;
-		else if (2772 - sum < 126 && 2772 - sum > 44)
+		else if (n - sum < 126 && n - sum > 44)
 		{
-			tmp = 2772 - sum;
+			tmp = n - sum;
 			*(s + i) = tmp;
 			*(s + i + 1) = '\0';
 			break;
