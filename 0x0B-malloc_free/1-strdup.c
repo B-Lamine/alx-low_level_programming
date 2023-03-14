@@ -11,6 +11,9 @@ int _strlen(char *s)
 {
 	int i;
 
+	if (s == NULL)
+		return (0);
+	{}
 	i = 0;
 	while (*(s + i) != '\0')
 		i++;
@@ -28,10 +31,10 @@ char *_strdup(char *str)
 	int i, len;
 	char *s;
 
+	len = _strlen(str);
 	s = malloc(sizeof(char) * len);
 	if (s == NULL)
 		return (0);
-	len = _strlen(str);
 	i = 0;
 	while (i < len)
 	{
