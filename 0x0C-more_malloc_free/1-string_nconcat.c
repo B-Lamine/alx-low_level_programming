@@ -37,11 +37,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
-	ptr = malloc(sizeof(*s1) * len1 + n + 1);
+	ptr = malloc(sizeof(*s1) * len1 + n);
 	if (ptr == NULL)
 		return (NULL);
 	i = 0;
-	while (i < len1 + n + 1)
+	while (i < len1 + n)
 	{
 		if (i < len1)
 			*(ptr + i) = *(s1 + i);
@@ -49,8 +49,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		{
 			if (i == len1 + len2)
 				break;
-			else
-				*(ptr + i) = *(s2 + i - len1);
+			*(ptr + i) = *(s2 + i - len1);
 		}
 		i++;
 	}
