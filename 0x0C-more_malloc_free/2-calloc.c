@@ -20,6 +20,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		free(ptr);
 		return (ptr);
 	}
+	*(char *)ptr = 0;
 	return (ptr);
 }
 
