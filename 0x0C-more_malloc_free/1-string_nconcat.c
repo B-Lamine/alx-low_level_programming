@@ -11,6 +11,8 @@ int _strlen(char *s)
 {
 	int i;
 
+	if (s == NULL)
+		return (0);
 	i = 0;
 	while (*(s + i) != '\0')
 		i++;
@@ -31,23 +33,26 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int i, len1, len2;
 	char *ptr;
 
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 	ptr = malloc(sizeof(*s1) * len1 + n);
 	if (ptr == NULL)
+	{
+		free(ptr);
 		return (NULL);
+	}
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	i = 0;
-	while (i < len1 + n)
+	while (i < len1 + n - 1)
 	{
 		if (i < len1)
 			*(ptr + i) = *(s1 + i);
 		else
 		{
-			if (i == len1 + len2)
+			if (i == len1 + len2 - 2)
 				break;
 			*(ptr + i) = *(s2 + i - len1);
 		}
