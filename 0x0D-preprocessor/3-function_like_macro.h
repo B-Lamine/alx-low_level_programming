@@ -1,4 +1,4 @@
-#ifndef ABS
-#define ABS
+#ifndef ABS_FCT
+#define ABS_FCT
 #define ABS(X) ((X) > 0 ? (X) : -(X))
-#endif /* ifndef ABS(x) */
+#endif /* ifndef ABS_FCT */
