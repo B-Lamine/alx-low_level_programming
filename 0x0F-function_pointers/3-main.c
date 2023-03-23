@@ -26,7 +26,6 @@ int main(int argc, char *argv[])
 	n1 = atoi(argv[1]);
 	n2 = atoi(argv[3]);
 	operation = get_op_func(argv[2]);
-	printf("here\n");
 	if (operation == NULL)
 	{
 		printf("Error\n");
