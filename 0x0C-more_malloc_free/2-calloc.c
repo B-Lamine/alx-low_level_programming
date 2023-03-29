@@ -2,15 +2,15 @@
 #include <stdlib.h>
 
 /**
-  * _memset - fills with character @b the @n first bytes of the memory pointer
+  * _memset - fills with int @b the @n first bytes of the memory pointer
   * to by @s.
   * @s: pointer to memory area.
-  * @b: byte to set memory to.
+  * @b: int to set memory to.
   * @n: number of bytes to be set.
   *
   * Return: pointer to the memory area.
   */
-char *_memset(char *s, char b, unsigned int n)
+char *_memset(char *s, int b, unsigned int n)
 {
 	unsigned int i;
 
@@ -39,7 +39,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	ptr = malloc(nmemb * size);
 	if (ptr == NULL)
 		return (ptr);
-	ptr = (void *)_memset(ptr, 0, size);
+	ptr = _memset(ptr, 0, size);
 	return (ptr);
 }
 
