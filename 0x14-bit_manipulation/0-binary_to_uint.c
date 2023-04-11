@@ -55,7 +55,7 @@ unsigned int binary_to_uint(const char *b)
 	i = 0;
 	while (*(b + i) != '\0')
 	{
-		digit = *(b + i) - '0'; 
+		digit = *(b + i) - '0';
 		if (digit != 0 && digit != 1)
 			return (0);
 		decimal_number = decimal_number + digit * _pow(2, order);
