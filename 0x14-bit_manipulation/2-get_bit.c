@@ -9,8 +9,11 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned long int mask = 1;
-	unsigned int check;
+	unsigned int check, range;
 
+	range = sizeof(unsigned long int) * 8 - 1;
+	if (index > range)
+		return (-1);
 	mask = mask << index;
 	check = ((n & mask) && mask);
 	if (check != 0 || check != 1)
