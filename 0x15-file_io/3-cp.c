@@ -53,10 +53,10 @@ int main(int ac, char *av[])
 	{
 		n = read(fd_from, buf, BUFSIZE);
 		if (n == -1)
-			error(98);
+			error(av[1], 98);
 		bytes_check = write(fd_to, buf, n);
 		if (bytes_check != n)
-			error(99);
+			error(av[2], 99);
 	}
 	close(fd_from);
 	if (fd_from == -1)
