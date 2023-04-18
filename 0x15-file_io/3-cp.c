@@ -11,7 +11,10 @@
   */
 void error(char *filename, int exit_n)
 {
-	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
+	if (exit_n == 98)
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
+	if (exit_n == 99)
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
 	exit(exit_n);
 }
 
@@ -64,5 +67,5 @@ int main(int ac, char *av[])
 	close(fd_to);
 	if (fd_to == -1)
 		close_error(fd_to);
-	return (1);
+	return (0);
 }
