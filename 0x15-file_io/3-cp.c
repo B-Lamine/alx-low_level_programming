@@ -61,11 +61,9 @@ int main(int ac, char *av[])
 		if (bytes_check != n)
 			error(av[2], 99);
 	}
-	close(fd_from);
-	if (fd_from == -1)
+	if (close(fd_from) == -1)
 		close_error(fd_from);
-	close(fd_to);
-	if (fd_to == -1)
+	if (close(fd_to) == -1)
 		close_error(fd_to);
 	return (0);
 }
