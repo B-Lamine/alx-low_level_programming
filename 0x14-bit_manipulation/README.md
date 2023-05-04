@@ -6,3 +6,4 @@ The present functions were developped in the course of practicing bit manipulati
 3-set_bit.c: set bit to 1 at a specific position of the binary representation of given number.
 4-clear_bit.c: set bit to 0 at a specific position of the binary representation of given number.
 5-flip_bits.c: count number of bits different between binary representation of two numbers.
+100-get_endianness.c: determine endianness of current machine.
