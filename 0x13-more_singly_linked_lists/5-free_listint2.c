@@ -9,7 +9,7 @@ void free_listint2(listint_t **head)
 {
 	listint_t *last_node = NULL;
 
-	if (*head == NULL)
+	if (head == NULL || *head == NULL)
 		return;
 	if ((*head)->next == NULL)
 	{
