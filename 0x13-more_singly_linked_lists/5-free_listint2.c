@@ -9,12 +9,9 @@ void free_listint2(listint_t **head)
 {
 	listint_t *last_node = NULL;
 
-	if (*head == NULL)
-		return;
 	if ((*head)->next == NULL)
 	{
 		free(*head);
-		*head = NULL;
 		return;
 	}
 	last_node = *head;
