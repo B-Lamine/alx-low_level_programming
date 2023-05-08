@@ -1,6 +1,6 @@
 #include "main.h"
-#include <stddef.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * error - prints error to stdout in case file read fails.
@@ -13,7 +13,7 @@ void error(char *filename, int exit_n)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
 	if (exit_n == 99)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
-	exit(exit_n)
+	exit(exit_n);
 }
 
 /**
