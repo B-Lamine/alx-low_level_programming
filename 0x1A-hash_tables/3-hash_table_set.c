@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-#include <stdio.h>
 
 /**
   * hash_table_set - insert @key, @value pair to hash table @ht.
@@ -26,25 +25,21 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (ht->array[index] == NULL)
 	{
 		ht->array[index] = new_node;
-		printf("key:%s\tvalue:%s\n", ht->array[index]->key, ht->array[index]->value);
 		return (1);
 	}
 	last_node = ht->array[index];
 	cursor = ht->array[index];
 	while (cursor != NULL)
 	{
-		printf("key:%s\tvalue:%s\n", cursor->key, cursor->value);
 		if (strcmp(cursor->key, key) == 0)
 		{
 			cursor->key = strdup(key);
 			cursor->value = strdup(value);
-			printf("key:%s\tvalue:%s\n", cursor->key, cursor->value);
 			return (1);
 		}
 		last_node = cursor;
 		cursor = cursor->next;
 	}
 	last_node->next = new_node;
-	printf("key:%s\tvalue:%s\n", last_node->key, last_node->value);
 	return (1);
 }
